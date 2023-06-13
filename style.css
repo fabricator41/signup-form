@@ -1,42 +1,103 @@
-/* A basic reset start */
-
-/* makes sizing simpler */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* remove default spacing */
-/* force styling of type through styling, rather than elements */
-
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+  box-sizing: border-box;
 }
 
-/* dark mode user-agent-styles */
-
-/*  html {
-  color-scheme: dark light;
-} */
-
-/* min body height */
+label,
+input {
+  display: block;
+  margin-bottom: 16px;
+}
 
 body {
-  min-height: 100vh;
-  text-align: center;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* responsive images/videos */
-img,
-picture,
-svg,
-video {
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.img {
   display: block;
-  max-width: 100%;
+  height: 100%;
+  width: auto;
 }
 
-/* A basic reset end */
+.left-container {
+  position: relative;
+}
+
+.opaque {
+  display: flex;
+  background-color: #000;
+  opacity: 0.7;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  justify-content: center;
+}
+.logo {
+  height: 8rem;
+}
+.brand {
+  color: #fff;
+  font-family: norse, sans-serif;
+  font-size: 6rem;
+  line-height: 8rem;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.slogan {
+  font-size: 2rem;
+  padding: 36px 72px;
+}
+
+form {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  padding-left: 72px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white {
+  background-color: #fff;
+}
+
+button {
+  width: max-content;
+  margin-top: 36px;
+  margin-left: 72px;
+  background-color: #596d48;
+  padding: 16px 64px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 16px;
+  border: none;
+}
+
+.bg-green {
+  color: #596d48;
+}
