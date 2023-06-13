@@ -32,25 +32,41 @@
         <p class="slogan white">Let's do this!</p>
         <div class="row">
           <form action="">
-            <div class="column">
-              <label for="firstname">FIRST NAME</label>
-              <input type="text" name="firstname" id="firstname" />
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+            <div class="row">
+              <div class="column">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" id="firstname" />
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" />
+                <label for="password">PASSWORD</label>
+                <input
+                  class="error"
+                  type="password"
+                  name="password"
+                  id="password"
+                />
+              </div>
+              <div class="column">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" id="lastname" />
+                <label for="phone">PHONE NUMBER</label>
+                <input type="number" name="phone" id="phone" />
+                <label for="confirm ">CONFIRM PASSWORD</label>
+                <input
+                  class="error"
+                  type="password"
+                  name="confirm"
+                  id="confirm"
+                />
+              </div>
             </div>
-            <div class="column">
-              <label for="lastname">LAST NAME</label>
-              <input type="text" name="lastname" id="lastname" />
-              <label for="phone">PHONE NUMBER</label>
-              <input type="number" name="phone" id="phone" />
-              <label for="confirm">CONFIRM PASSWORD</label>
-              <input type="password" name="confirm" id="confirm" />
+            <div class="row">
+              <div class="column">
+                <button type="submit">Create Account</button>
+              </div>
             </div>
           </form>
         </div>
-        <button>Create Account</button>
         <p class="slogan">
           Already have an account? <span class="bg-green">Log in</span>
         </p>

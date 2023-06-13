@@ -6,8 +6,8 @@
 
 label,
 input {
+  font-family: system-ui, sans-serif;
   display: block;
-  margin-bottom: 16px;
 }
 
 body {
@@ -100,4 +100,24 @@ button {
 
 .bg-green {
   color: #596d48;
+}
+
+.error {
+  border: 1px solid #f00;
+}
+
+input {
+  min-width: 300px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  border: 1px solid #00f;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
