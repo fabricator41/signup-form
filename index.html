@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
   </head>
   <body>
     <div class="container">
@@ -30,10 +31,10 @@
         </p>
         <p class="slogan">You know you want to</p>
         <p class="slogan white">Let's do this!</p>
-        <div class="row">
-          <form action="">
-            <div class="row">
-              <div class="column">
+        <form action="">
+          <div class="column">
+            <div class="row shadow">
+              <fieldset class="column">
                 <label for="firstname">FIRST NAME</label>
                 <input type="text" name="firstname" id="firstname" />
                 <label for="email">EMAIL</label>
@@ -45,8 +46,8 @@
                   name="password"
                   id="password"
                 />
-              </div>
-              <div class="column">
+              </fieldset>
+              <fieldset class="column">
                 <label for="lastname">LAST NAME</label>
                 <input type="text" name="lastname" id="lastname" />
                 <label for="phone">PHONE NUMBER</label>
@@ -58,15 +59,13 @@
                   name="confirm"
                   id="confirm"
                 />
-              </div>
+              </fieldset>
             </div>
-            <div class="row">
-              <div class="column">
-                <button type="submit">Create Account</button>
-              </div>
+            <div class="row gray-bg">
+              <button type="submit">Create Account</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
         <p class="slogan">
           Already have an account? <span class="bg-green">Log in</span>
         </p>

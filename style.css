@@ -19,7 +19,6 @@ body {
 
 .container {
   height: 100vh;
-  width: 100vw;
   display: flex;
 }
 
@@ -66,19 +65,15 @@ body {
 form {
   background-color: #fff;
   width: 100%;
-  display: flex;
-  padding-left: 72px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-right: 64px;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .white {
@@ -120,4 +115,18 @@ label {
   font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+
+.gray-bg {
+  background-color: #eee;
+}
+
+fieldset {
+  border: none;
+  padding-left: 72px;
+}
+
+.shadow {
+  box-shadow: 0px 3px 10px grey;
+  z-index: 999;
 }
