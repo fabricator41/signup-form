@@ -1,15 +1,24 @@
 const password = document.getElementById('password');
 const confirm = document.getElementById('confirm');
-const form = document.getElementsByClassName('.shadow');
+const form = document.querySelector('.deneme');
 const error = document.querySelectorAll('.error');
+let temp;
 
-confirm.addEventListener('input', check);
-let deneme = document.createElement('label');
+confirm.addEventListener('change', check);
+password.addEventListener('change', memory);
+const deneme = document.createElement('p');
 
-deneme.textContent = '*Passwords do not match';
+console.log(form);
+form.appendChild(deneme);
+
+function memory() {
+  temp = password.value;
+}
 
 function check() {
-  return password.value === confirm.value
-    ? error.classList.remove('error')
-    : form.appendChild(deneme);
+  if (temp !== confirm.value) {
+    console.log(deneme.textContent);
+    deneme.style.color = '#f00';
+    deneme.textContent = '*Passwords do not match';
+  }
 }

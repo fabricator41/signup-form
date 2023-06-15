@@ -54,7 +54,6 @@ body {
 .right-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .slogan {
